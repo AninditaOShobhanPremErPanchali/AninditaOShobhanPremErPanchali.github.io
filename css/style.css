@@ -1,0 +1,10 @@
+
+body{font-family:Poppins,sans-serif}
+.hero{background:linear-gradient(135deg,#ffe4e6,#fff)}
+.card,.gallery-item{
+background:#ffe4e6;
+padding:20px;
+border-radius:16px;
+box-shadow:0 4px 12px rgba(0,0,0,.1)
+}
+.gallery-item{height:220px;display:flex;align-items:center;justify-content:center}
