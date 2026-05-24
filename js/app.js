@@ -1,6 +1,6 @@
 
 AOS.init();
-const PRIVATE_PASSWORD = 'Anish@28226';
+const PRIVATE_PASSWORD = 'Cab@Bea18626';
 const ACCESS_KEY = 'privateAccessGranted';
 const text = 'Every love story is beautiful, but ours is my favorite.';
 let i = 0;
