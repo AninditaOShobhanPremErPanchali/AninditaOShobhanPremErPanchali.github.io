@@ -12,9 +12,21 @@
 </head>
 <body class="bg-rose-50 text-gray-800">
 
+<div id="private-access-overlay" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-white p-4">
+  <div class="w-full max-w-md rounded-3xl bg-[#0b1220] p-8 text-center shadow-2xl sm:mx-4">
+    <h1 class="text-3xl font-bold mb-4 text-white">Private Access Page</h1>
+    <p class="text-gray-300 mb-6">Enter the access code to see this page.</p>
+    <input id="access-password" type="password" placeholder="Access Code" class="w-full rounded-xl border border-gray-300 px-4 py-3 text-lg outline-none focus:border-rose-400" autocomplete="off" />
+    <button id="access-submit" class="mt-6 w-full rounded-full bg-rose-500 px-6 py-3 text-white font-semibold hover:bg-rose-600">Unlock</button>
+    <p id="access-error" class="mt-4 text-sm text-red-500 hidden">Wrong access code. Please try again.</p>
+  </div>
+</div>
+
+<div id="main-content" class="blurred">
 <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 hero">
 <h1 class="text-5xl md:text-7xl font-bold mb-4">❤️ Anindita & Shobhan ❤️</h1>
 <p id="typed" class="text-xl md:text-2xl"></p>
+<div class="mt-10 animate-blink      e"><i>অনিন্দিতা ও শোভনের প্রেমের পাঁচালী...</i></div>
 <div class="mt-10 animate-bounce">↓ Scroll Down ↓</div>
 </section>
 
@@ -68,6 +80,7 @@ Shobhan ❤️
 <h2 class="text-4xl font-bold">Some stories have an end.</h2>
 <p class="mt-4 text-2xl">Ours is just beginning ❤️</p>
 </footer>
+</div>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="js/app.js"></script>

@@ -8,3 +8,8 @@ border-radius:16px;
 box-shadow:0 4px 12px rgba(0,0,0,.1)
 }
 .gallery-item{height:220px;display:flex;align-items:center;justify-content:center}
+
+#private-access-overlay{background:rgba(255,255,255,1);}
+#main-content{transition:filter .25s ease-in-out;}
+#main-content.blurred{filter:none;}
+#private-access-overlay input::placeholder{color:#a1a1aa;}
