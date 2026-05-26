@@ -93,4 +93,4 @@ class MusicPlayer {
 
 // Initialize music player globally
 const musicPlayer = new MusicPlayer();
-musicPlayer.setVolume(0.8); // Set background music to 80% volume
+musicPlayer.setVolume(0.5); // Set background music to 50% volume
