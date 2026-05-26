@@ -13,3 +13,45 @@ box-shadow:0 4px 12px rgba(0,0,0,.1)
 #main-content{transition:filter .25s ease-in-out;}
 #main-content.blurred{filter:none;}
 #private-access-overlay input::placeholder{color:#a1a1aa;}
+
+/* Bubble Animation */
+.bubble-container{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  z-index:40;
+}
+
+.bubble{
+  position:absolute;
+  bottom:-50px;
+  width:30px;
+  height:30px;
+  background:rgba(236,72,153,0.6);
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+  animation:bubbleRise 3s ease-in forwards;
+  box-shadow:0 4px 15px rgba(236,72,153,0.4);
+}
+
+@keyframes bubbleRise{
+  0%{
+    bottom:-50px;
+    opacity:1;
+    transform:translateX(0) scale(1);
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    bottom:100vh;
+    opacity:0;
+    transform:translateX(var(--tx)) scale(0.5);
+  }
+}

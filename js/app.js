@@ -13,11 +13,47 @@ function type(){
   }
 }
 
+function createBubbles(){
+  const container = document.createElement('div');
+  container.className = 'bubble-container';
+  document.body.appendChild(container);
+  
+  // Create 12 bubbles
+  for(let i = 0; i < 12; i++){
+    setTimeout(() => {
+      const bubble = document.createElement('div');
+      bubble.className = 'bubble';
+      bubble.innerHTML = '❤️';
+      
+      // Random horizontal position
+      const randomX = Math.random() * window.innerWidth;
+      bubble.style.left = randomX + 'px';
+      
+      // Random horizontal drift
+      const drift = (Math.random() - 0.5) * 200;
+      bubble.style.setProperty('--tx', drift + 'px');
+      
+      container.appendChild(bubble);
+      
+      // Remove bubble after animation completes
+      setTimeout(() => {
+        bubble.remove();
+      }, 3000);
+    }, i * 100);
+  }
+  
+  // Remove container after all bubbles are done
+  setTimeout(() => {
+    container.remove();
+  }, 4200);
+}
+
 function grantAccess(){
   document.getElementById('private-access-overlay').classList.add('hidden');
   document.body.classList.remove('overflow-hidden');
   document.getElementById('main-content').classList.remove('blurred');
   type();
+  createBubbles();
   
   // Start background music
   if (typeof musicPlayer !== 'undefined') {
