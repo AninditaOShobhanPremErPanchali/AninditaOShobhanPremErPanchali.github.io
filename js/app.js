@@ -18,6 +18,11 @@ function grantAccess(){
   document.body.classList.remove('overflow-hidden');
   document.getElementById('main-content').classList.remove('blurred');
   type();
+  
+  // Start background music
+  if (typeof musicPlayer !== 'undefined') {
+    musicPlayer.start();
+  }
 }
 
 function initPrivateAccess(){
