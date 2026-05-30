@@ -1,6 +1,14 @@
 
 body{font-family:Poppins,sans-serif}
 .hero{background:linear-gradient(135deg,#ffe4e6,#fff)}
+.hero-title{position:relative; z-index:1;}
+.hero-title .ampersand{display:inline-block; font-size:1.1em; color:#db2777; margin:0.35rem auto; letter-spacing:0.08em;}
+.hero-title span{display:block;}
+.hero-title span:first-child{margin-bottom:0.25rem;}
+.hero-title span:last-child{margin-top:0.25rem;}
+@media(min-width:768px){
+  .hero-title .ampersand{font-size:1.35em;}
+}
 .card,.gallery-item{
 background:#ffe4e6;
 padding:20px;
