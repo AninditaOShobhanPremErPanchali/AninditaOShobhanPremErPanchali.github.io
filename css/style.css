@@ -17,6 +17,20 @@ box-shadow:0 4px 12px rgba(0,0,0,.1)
 }
 .gallery-item{height:220px;display:flex;align-items:center;justify-content:center}
 
+/* Vibrant, smooth styling for the First Chat card */
+.first-chat-card{
+  background: linear-gradient(135deg,#ff7eb6 0%,#ff758c 100%);
+  color: #fff;
+  border-radius:20px;
+  box-shadow:0 12px 30px rgba(255,117,146,0.18);
+  overflow:hidden;
+  transition:transform .35s ease, box-shadow .35s ease;
+}
+.first-chat-card:hover{transform:translateY(-6px);box-shadow:0 20px 45px rgba(255,117,146,0.22)}
+.first-chat-card h3{color:rgba(255,255,255,0.98)}
+.first-chat-card p{color:rgba(255,255,255,0.95)}
+.first-chat-card .h-96{background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))}
+
 #private-access-overlay{background:rgba(255,255,255,1);}
 #main-content{transition:filter .25s ease-in-out;}
 #main-content.blurred{filter:none;}
