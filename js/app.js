@@ -1,6 +1,6 @@
 
 AOS.init();
-const PRIVATE_PASSWORD = 'Cab@Bea18626';
+const PRIVATE_PASSWORD = 'Personality';
 const ACCESS_KEY = 'privateAccessGranted';
 const text = 'Every love story is beautiful, but ours is my favorite.';
 let i = 0;
@@ -48,6 +48,93 @@ function createBubbles(){
   }, 4200);
 }
 
+const galleryImages = {
+  bothOfUs: [
+    'assets/images/both_of_us/img_1.jpg',
+    'assets/images/both_of_us/img_10.jpg',
+    'assets/images/both_of_us/img_11.jpg',
+    'assets/images/both_of_us/img_12.jpg',
+    'assets/images/both_of_us/img_13.jpg',
+    'assets/images/both_of_us/img_14.jpg',
+    'assets/images/both_of_us/img_15.jpg',
+    'assets/images/both_of_us/img_16.jpg',
+    'assets/images/both_of_us/img_17.jpg',
+    'assets/images/both_of_us/img_18.jpg',
+    'assets/images/both_of_us/img_19.jpg',
+    'assets/images/both_of_us/img_20.jpg',
+    'assets/images/both_of_us/img_21.jpg',
+    'assets/images/both_of_us/img_22.jpg'
+  ],
+  onlyAnindita: [
+    'assets/images/Only_Anindita/img_ani_1.1.jpeg',
+    'assets/images/Only_Anindita/img_ani_1.2.jpeg',
+    'assets/images/Only_Anindita/img_ani_2.jpeg',
+    'assets/images/Only_Anindita/img_ani_3.jpg',
+    'assets/images/Only_Anindita/img_ani_4.jpeg',
+    'assets/images/Only_Anindita/img_ani_5.1.jpeg',
+    'assets/images/Only_Anindita/img_ani_5.2.jpeg',
+    'assets/images/Only_Anindita/img_ani_5.3.jpeg',
+    'assets/images/Only_Anindita/img_ani_5.4.jpeg',
+    'assets/images/Only_Anindita/img_ani_5.5.jpeg'
+  ]
+};
+
+function shuffleGalleryImages(){
+  const both = galleryImages.bothOfUs.slice();
+  const only = galleryImages.onlyAnindita.slice();
+  if(both.length < 3 || only.length < 2) return;
+
+  const selectedBoth = [];
+  const selectedOnly = [];
+
+  for (let i = 0; i < 3; i++) {
+    const index = Math.floor(Math.random() * both.length);
+    selectedBoth.push(both.splice(index, 1)[0]);
+  }
+
+  for (let i = 0; i < 2; i++) {
+    const index = Math.floor(Math.random() * only.length);
+    selectedOnly.push(only.splice(index, 1)[0]);
+  }
+
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  if(galleryItems.length < 5) return;
+
+  const sources = [
+    selectedBoth[0],
+    selectedOnly[0],
+    selectedBoth[1],
+    selectedOnly[1],
+    selectedBoth[2]
+  ];
+
+  galleryItems.forEach((item, index) => {
+    const img = item.querySelector('img');
+    if (img) {
+      img.classList.add('fade-out');
+      setTimeout(() => {
+        img.src = sources[index];
+        img.classList.remove('fade-out');
+        img.classList.add('fade-in');
+        setTimeout(() => {
+          img.classList.remove('fade-in');
+        }, 600);
+      }, 300);
+    } else {
+      const newImg = document.createElement('img');
+      newImg.src = sources[index];
+      newImg.alt = `Gallery image ${index + 1}`;
+      newImg.loading = 'lazy';
+      newImg.classList.add('fade-in');
+      item.innerHTML = '';
+      item.appendChild(newImg);
+      setTimeout(() => {
+        newImg.classList.remove('fade-in');
+      }, 600);
+    }
+  });
+}
+
 function grantAccess(){
   document.getElementById('private-access-overlay').classList.add('hidden');
   document.body.classList.remove('overflow-hidden');
@@ -60,6 +147,7 @@ function grantAccess(){
     musicPlayer.start();
   }
 }
+
 
 function initPrivateAccess(){
   const overlay = document.getElementById('private-access-overlay');
@@ -91,4 +179,6 @@ function initPrivateAccess(){
   input.focus();
 }
 
+shuffleGalleryImages();
+setInterval(shuffleGalleryImages, 5000);
 initPrivateAccess();
