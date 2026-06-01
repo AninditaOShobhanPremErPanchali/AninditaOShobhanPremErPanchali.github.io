@@ -62,9 +62,7 @@ const galleryImages = {
     'assets/images/both_of_us/photo_10.jpg',
     'assets/images/both_of_us/photo_11.jpg',
     'assets/images/both_of_us/photo_12.jpg',
-    'assets/images/both_of_us/photo_13.jpg',
-    'assets/images/both_of_us/photo_14.jpg',
-    'assets/images/both_of_us/photo_15.jpg'
+    'assets/images/both_of_us/photo_13.jpg'
   ],
   onlyAnindita: [
     'assets/images/Only_Anindita/img_ani_1.1.jpeg',
