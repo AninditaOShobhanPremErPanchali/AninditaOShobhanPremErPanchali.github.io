@@ -51,9 +51,18 @@ box-shadow:0 4px 12px rgba(0,0,0,.1)
   color: #111827 !important;
   font-weight: 500;
 }
-..first-chat-card p.text-sm {
+.first-chat-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.first-chat-card p.text-base {
   color: #111827 !important;
-  font-weight: 400;
+  font-weight: 600;
+}
+.first-chat-card p.text-sm {
+  color: #111827 !important;
+  font-weight: 500;
 }
 .first-chat-card .h-96,
 .first-chat-card .first-chat-image {
