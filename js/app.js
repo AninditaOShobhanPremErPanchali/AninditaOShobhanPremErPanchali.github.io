@@ -50,20 +50,19 @@ function createBubbles(){
 
 const galleryImages = {
   bothOfUs: [
-    'assets/images/both_of_us/img_1.jpg',
-    'assets/images/both_of_us/img_10.jpg',
-    'assets/images/both_of_us/img_11.jpg',
-    'assets/images/both_of_us/img_12.jpg',
-    'assets/images/both_of_us/img_13.jpg',
-    'assets/images/both_of_us/img_14.jpg',
-    'assets/images/both_of_us/img_15.jpg',
-    'assets/images/both_of_us/img_16.jpg',
-    'assets/images/both_of_us/img_17.jpg',
-    'assets/images/both_of_us/img_18.jpg',
-    'assets/images/both_of_us/img_19.jpg',
-    'assets/images/both_of_us/img_20.jpg',
-    'assets/images/both_of_us/img_21.jpg',
-    'assets/images/both_of_us/img_22.jpg'
+    'assets/images/both_of_us/photo_1.jpg',
+    'assets/images/both_of_us/photo_2.jpg',
+    'assets/images/both_of_us/photo_3.jpg',
+    'assets/images/both_of_us/photo_4.jpg',
+    'assets/images/both_of_us/photo_5.jpg',
+    'assets/images/both_of_us/photo_6.jpg',
+    'assets/images/both_of_us/photo_7.jpg',
+    'assets/images/both_of_us/photo_8.jpg',
+    'assets/images/both_of_us/photo_9.jpg',
+    'assets/images/both_of_us/photo_10.jpg',
+    'assets/images/both_of_us/photo_11.jpg',
+    'assets/images/both_of_us/photo_12.jpg',
+    'assets/images/both_of_us/photo_13.jpg'
   ],
   onlyAnindita: [
     'assets/images/Only_Anindita/img_ani_1.1.jpeg',
