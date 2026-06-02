@@ -1,5 +1,5 @@
 
-const startDate=new Date('2026-02-28');
+const startDate=new Date('2026-03-01');
 function updateCounter(){
  const now=new Date();
  const diff=now-startDate;
