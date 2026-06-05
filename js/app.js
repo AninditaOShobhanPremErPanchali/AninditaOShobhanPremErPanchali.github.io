@@ -180,4 +180,29 @@ function initPrivateAccess(){
 
 shuffleGalleryImages();
 setInterval(shuffleGalleryImages, 5000);
+
+// Birthday Letter Modal Handler
+function initBirthdayLetter(){
+  const openLetterBtn = document.getElementById('open-letter-btn');
+  const birthdayModal = document.getElementById('birthday-modal');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+
+  if(openLetterBtn && birthdayModal && closeModalBtn){
+    openLetterBtn.addEventListener('click', () => {
+      birthdayModal.classList.remove('hidden');
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      birthdayModal.classList.add('hidden');
+    });
+
+    birthdayModal.addEventListener('click', (e) => {
+      if(e.target === birthdayModal){
+        birthdayModal.classList.add('hidden');
+      }
+    });
+  }
+}
+
+initBirthdayLetter();
 initPrivateAccess();

@@ -55,7 +55,7 @@
   </div>
 </div>
 <div class="card first-chat-card overflow-hidden max-w-4xl shadow-2xl">
-  <div class="p-6 space-y-2 text-left relative z-10">
+  <div class="p-6 space-y-1 text-left relative z-10">
     <h3 class="text-3xl font-bold text-rose-700">🌸 First Meeting</h3>
     <p class="text-sm leading-6 text-gray-700">Our first meeting during the monsoon was nothing more than two strangers sharing an office cab. Something so unexpected slowly became the most expected part of my day. Somewhere along the way, I started believing this partnership was never meant to stay limited to just cab rides. It's a connection that can cross boundaries and reach destinations far beyond what we imagined. ❤️☔</p>
       <p class="text-sm leading-6 text-gray-700">Maybe one day the "cab partner" title might fade away, but I truly wish the spark we've shared never does. I hope it stays alive through every season, every chapter, and every mile ahead. <span class="text-2xl ml-1">🤞</span></p>
@@ -67,7 +67,7 @@
     <div class="h-64 overflow-hidden first-chat-image lg:float-right lg:ml-6 lg:mb-4 lg:w-1/3">
       <img src="assets/images/First_Date_img.jpg" alt="First Date" class="w-full h-full object-contain" />
     </div>
-    <div class="p-6 space-y-2 text-left lg:p-0">
+    <div class="p-6 space-y-1 text-left lg:p-0">
       <h3 class="text-3xl font-bold text-rose-700">🌸 First Date</h3>
       <p class="text-sm leading-6 text-gray-700">March 1, 2026 — after a lot of convincing, you finally agreed to come for dinner. But being the smart girl you are, you tried every way to avoid calling it a date, while I was equally stubborn about making it one. And just like that, our little "date match" began—the score stayed 0-0 throughout the evening. No winner, no loser. 😂</p>
       <p class="text-sm leading-6 text-gray-700">At the very end, I did a small little gesture to make you feel special. Honestly, I wasn't expecting anything at all. Even a little appreciation would've been enough. Seeing you surprised was sweet, but seeing you emotional touched my heart in a way I can't explain. That's when I felt like I finally won the match. So the score became 0-1. Not because I won, but because that was the moment our dinner truly became our first date. ❤️</p>
@@ -77,21 +77,21 @@
   </div>
 </div>
 <div class="card first-chat-card overflow-hidden max-w-4xl shadow-2xl">
-  <div class="p-6 space-y-1 text-left">
+  <div class="p-6 space-y-0 text-left">
     <h3 class="text-3xl font-bold text-rose-700">🌸 First Trip</h3>
     <p class="text-sm leading-7 text-gray-700">Our first trip hasn't happened yet, but somehow it already has a reserved spot in my favorite memories. It's been sitting on our checklist for so long that I can already picture us getting lost on random roads, arguing over playlists, stealing each other's snacks, and taking way too many photos. The place will be beautiful, but I have a feeling my favorite view will still be you. 😍</p>
     <p class="mt-4 text-base font-semibold text-rose-800 border-t border-rose-200 pt-4">Destination unknown, favorite travel partner already chosen. ✈️</p>
   </div>
 </div>
 <div class="card first-chat-card overflow-hidden max-w-4xl shadow-2xl">
-  <div class="p-6 space-y-1 text-left">
+  <div class="p-6 space-y-0 text-left">
     <h3 class="text-3xl font-bold text-rose-700">🌸 Proposal</h3>
     <p class="text-sm leading-7 text-gray-700">The proposal is one of those moments that deserves a little patience. No rushing, no pressure—just the perfect place, the perfect timing, and a heart full of feelings. And honestly, knowing that such a special moment is waiting for us somewhere in the future makes me smile already. I just know it's going to be one of those memories we'll replay in our heads forever. 💝</p>
     <p class="mt-4 text-base font-semibold text-rose-800 border-t border-rose-200 pt-4">The plan isn't ready yet, but one thing is certain—you're definitely the reason it's worth planning. 💍</p>
   </div>
 </div>
 <div class="card first-chat-card overflow-hidden max-w-4xl shadow-2xl">
-  <div class="p-6 space-y-1 text-left">
+  <div class="p-6 space-y-0 text-left">
     <h3 class="text-3xl font-bold text-rose-700">🌸 Wedding</h3>
     <p class="text-sm leading-7 text-gray-700">The wedding is the dream at the end of our little adventure. There's still so much to discover about each other, so many memories left to make, and so many milestones waiting for us. When that day finally arrives, I don't want it to be just special—I want it to feel like a dream we ever wished for—a beautiful moment filled with love, happiness, and a little bit of magic. 👰🏻🤵🏻</p>
     <p class="mt-4 text-base font-semibold text-rose-800 border-t border-rose-200 pt-4">No matter how long the journey takes, I'm just excited that all my favorite future memories seem to have one thing in common—you. 💐</p>
@@ -113,13 +113,41 @@
 
 <section class="py-20 bg-white px-6" data-aos="fade-up">
 <h2 class="text-4xl text-center font-bold mb-10">Love Letter</h2>
-<div class="max-w-3xl mx-auto bg-rose-100 p-8 rounded-xl shadow">
-Dear Anindita!<br><br>
-You entered my life when I least expected it. Every moment with you became a memory worth keeping forever.<br><br>
-Love,<br>
-Shobhan ❤️
+<div class="flex flex-col items-center gap-8">
+  <button id="open-letter-btn" class="text-9xl hover:scale-110 transition-transform duration-300 animate-pulse cursor-pointer" title="Click to open birthday letter">
+    💌
+  </button>
+  <div class="max-w-3xl mx-auto bg-rose-100 p-8 rounded-xl shadow">
+    Dear Anindita!<br><br>
+    You entered my life when I least expected it. Every moment with you became a memory worth keeping forever.<br><br>
+    Love,<br>
+    Shobhan ❤️
+  </div>
 </div>
 </section>
+
+<!-- Birthday Pop-up Modal -->
+<div id="birthday-modal" class="fixed inset-0 z-40 hidden flex items-center justify-center bg-black bg-opacity-50 p-4 animate-fadeIn">
+  <div class="bg-gradient-to-br from-rose-200 via-pink-100 to-rose-100 rounded-3xl p-8 max-w-md w-full shadow-2xl transform animate-scaleIn">
+    <div class="text-center space-y-6">
+      <div class="text-7xl animate-bounce">🎂</div>
+      <h2 class="text-4xl font-bold text-rose-700">Happy Birthday</h2>
+      <p class="text-5xl font-bold text-rose-600">Anindita! 🎉</p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        On this special day, I want to celebrate YOU! 🌸<br>
+        The most beautiful soul, the warmest heart, and my favorite person. ✨<br>
+        <br>
+        Wishing you a day as magical as you are! 💖🎈
+      </p>
+      <div class="flex justify-center gap-4 text-5xl">
+        🎁 🌹 💝 🦋 ⭐
+      </div>
+      <button id="close-modal-btn" class="mt-6 px-8 py-3 bg-rose-500 hover:bg-rose-600 text-white font-bold rounded-full transition-all duration-300">
+        Close 💕
+      </button>
+    </div>
+  </div>
+</div>
 
 <section class="py-20 text-center" data-aos="fade-up">
 <h2 class="text-4xl font-bold mb-10">Future Dreams</h2>
