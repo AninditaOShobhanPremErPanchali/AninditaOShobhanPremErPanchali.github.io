@@ -181,6 +181,77 @@ function initPrivateAccess(){
 shuffleGalleryImages();
 setInterval(shuffleGalleryImages, 5000);
 
+// Confetti and Balloon Animation
+function triggerBirthdayAnimation(){
+  // Adjust confetti parameters based on screen size
+  const isMobile = window.innerWidth < 640;
+  const isTablet = window.innerWidth < 1024;
+  
+  const centerParticles = isMobile ? 80 : isTablet ? 120 : 150;
+  const sideParticles = isMobile ? 50 : isTablet ? 75 : 100;
+  
+  // Confetti burst from center
+  confetti({
+    particleCount: centerParticles,
+    spread: 70,
+    origin: { y: 0.6 },
+    colors: ['#ff1493', '#ff69b4', '#ffb6c1', '#ff6b9d', '#c71585', '#ff00ff']
+  });
+
+  // Additional confetti bursts from left side
+  setTimeout(() => {
+    confetti({
+      particleCount: sideParticles,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0, y: 0.5 },
+      colors: ['#ffd700', '#ffed4e', '#ffc700']
+    });
+  }, 100);
+
+  // Additional confetti bursts from right side
+  setTimeout(() => {
+    confetti({
+      particleCount: sideParticles,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1, y: 0.5 },
+      colors: ['#ffd700', '#ffed4e', '#ffc700']
+    });
+  }, 200);
+
+  // Create floating balloons
+  createBirthdayBalloons();
+}
+
+function createBirthdayBalloons(){
+  const balloonEmojis = ['🎈', '🎉', '🎊', '🎁', '⭐', '🌟', '✨'];
+  const container = document.createElement('div');
+  container.className = 'balloon-container';
+  document.body.appendChild(container);
+
+  // Adjust number of balloons based on screen size
+  const isMobile = window.innerWidth < 640;
+  const isTablet = window.innerWidth < 1024;
+  const balloonCount = isMobile ? 8 : isTablet ? 10 : 12;
+
+  for(let i = 0; i < balloonCount; i++){
+    setTimeout(() => {
+      const balloon = document.createElement('div');
+      balloon.className = 'birthday-balloon';
+      balloon.innerHTML = balloonEmojis[Math.floor(Math.random() * balloonEmojis.length)];
+      balloon.style.left = Math.random() * window.innerWidth + 'px';
+      balloon.style.setProperty('--duration', (Math.random() * 2 + 2) + 's');
+      balloon.style.setProperty('--delay', (i * 50) + 'ms');
+      container.appendChild(balloon);
+    }, i * 50);
+  }
+
+  setTimeout(() => {
+    container.remove();
+  }, 4000);
+}
+
 // Birthday Letter Modal Handler
 function initBirthdayLetter(){
   const openLetterBtn = document.getElementById('open-letter-btn');
@@ -190,6 +261,7 @@ function initBirthdayLetter(){
   if(openLetterBtn && birthdayModal && closeModalBtn){
     openLetterBtn.addEventListener('click', () => {
       birthdayModal.classList.remove('hidden');
+      triggerBirthdayAnimation();
     });
 
     closeModalBtn.addEventListener('click', () => {

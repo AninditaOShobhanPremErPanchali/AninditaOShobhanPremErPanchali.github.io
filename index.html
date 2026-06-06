@@ -9,6 +9,7 @@
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.0/dist/confetti.browser.min.js"></script>
 </head>
 <body class="bg-rose-50 text-gray-800">
 
@@ -111,21 +112,6 @@
 </div>
 </section>
 
-<section class="py-20 bg-white px-6" data-aos="fade-up">
-<h2 class="text-4xl text-center font-bold mb-10">Love Letter</h2>
-<div class="flex flex-col items-center gap-8">
-  <button id="open-letter-btn" class="text-9xl hover:scale-110 transition-transform duration-300 animate-pulse cursor-pointer" title="Click to open birthday letter">
-    💌
-  </button>
-  <div class="max-w-3xl mx-auto bg-rose-100 p-8 rounded-xl shadow">
-    Dear Anindita!<br><br>
-    You entered my life when I least expected it. Every moment with you became a memory worth keeping forever.<br><br>
-    Love,<br>
-    Shobhan ❤️
-  </div>
-</div>
-</section>
-
 <!-- Birthday Pop-up Modal -->
 <div id="birthday-modal" class="fixed inset-0 z-40 hidden flex items-center justify-center bg-black bg-opacity-50 p-4 animate-fadeIn">
   <div class="bg-gradient-to-br from-rose-200 via-pink-100 to-rose-100 rounded-3xl p-8 max-w-md w-full shadow-2xl transform animate-scaleIn">
@@ -133,8 +119,9 @@
       <div class="text-7xl animate-bounce">🎂</div>
       <h2 class="text-4xl font-bold text-rose-700">Happy Birthday</h2>
       <p class="text-5xl font-bold text-rose-600">Anindita! 🎉</p>
+      <p class="text-base font-semibold text-rose-800">💕 18th June: the day chapter 25 begins, and I can't wait to spend more of it with you. 💐</p>
       <p class="text-lg text-gray-700 leading-relaxed">
-        On this special day, I want to celebrate YOU! 🌸<br>
+        Though miles apart, my heart celebrates YOU! 🌸<br>
         The most beautiful soul, the warmest heart, and my favorite person. ✨<br>
         <br>
         Wishing you a day as magical as you are! 💖🎈
@@ -161,10 +148,27 @@
 </ul>
 </section>
 
+<section class="py-20 bg-white px-6" data-aos="fade-up">
+<h2 class="text-4xl text-center font-bold mb-10">Love Letter</h2>
+<div class="max-w-3xl mx-auto bg-rose-100 p-8 rounded-xl shadow">
+  Dear Anindita!<br><br>
+  You entered my life when I least expected it. Every moment with you became a memory worth keeping forever.<br><br>
+  Love,<br>
+  Shobhan ❤️
+</div>
+</section>
+
 <footer class="py-16 text-center bg-rose-200">
 <h2 class="text-4xl font-bold">Some stories have an end.</h2>
 <p class="mt-4 text-2xl">Ours is just beginning ❤️</p>
 </footer>
+
+<section class="py-12 text-center bg-gradient-to-t from-rose-200 to-rose-50">
+  <button id="open-letter-btn" class="text-9xl hover:scale-110 transition-transform duration-300 animate-pulse cursor-pointer" title="Click to open birthday letter">
+    💌
+  </button>
+  <p class="mt-4 text-rose-600 font-semibold text-lg">Click to Open My Letter 💕</p>
+</section>
 </div>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

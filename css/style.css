@@ -1,5 +1,31 @@
 
 body{font-family:Poppins,sans-serif}
+.balloon-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:35;overflow:hidden}
+.birthday-balloon{position:fixed;font-size:2rem;animation:float-up var(--duration) ease-in infinite;animation-delay:var(--delay)}
+@keyframes float-up{0%{opacity:1;transform:translateY(0) rotate(0deg)}100%{opacity:0;transform:translateY(-100vh) rotate(360deg)}}
+@media(min-width:640px){.birthday-balloon{font-size:2.5rem}}
+@media(min-width:1024px){.birthday-balloon{font-size:3rem}}
+/* Birthday Modal Responsive Styles */
+#birthday-modal{z-index:50!important}
+#birthday-modal .bg-gradient-to-br{padding:1.5rem}
+@media(min-width:640px){#birthday-modal .bg-gradient-to-br{padding:2rem}}
+@media(min-width:1024px){#birthday-modal .bg-gradient-to-br{padding:2.5rem}}
+#birthday-modal .text-7xl{font-size:3rem}
+@media(min-width:640px){#birthday-modal .text-7xl{font-size:3.5rem}}
+@media(min-width:1024px){#birthday-modal .text-7xl{font-size:4.5rem}}
+#birthday-modal .text-4xl{font-size:2rem}
+@media(min-width:640px){#birthday-modal .text-4xl{font-size:2.5rem}}
+@media(min-width:1024px){#birthday-modal .text-4xl{font-size:2.25rem}}
+#birthday-modal .text-5xl{font-size:2.5rem}
+@media(min-width:640px){#birthday-modal .text-5xl{font-size:3rem}}
+@media(min-width:1024px){#birthday-modal .text-5xl{font-size:3rem}}
+#birthday-modal .text-lg{font-size:0.875rem}
+@media(min-width:640px){#birthday-modal .text-lg{font-size:1rem}}
+#birthday-modal .flex{flex-wrap:wrap}
+#birthday-modal .gap-4{gap:1rem}
+@media(min-width:640px){#birthday-modal .gap-4{gap:1rem}}
+#birthday-modal button{font-size:0.875rem;padding:0.75rem 1.5rem}
+@media(min-width:640px){#birthday-modal button{font-size:1rem;padding:0.75rem 2rem}}
 .hero{background:linear-gradient(135deg,#ffe4e6,#fff)}
 .hero-title{position:relative; z-index:1;}
 .hero-title .ampersand{display:inline-block; font-size:1.1em; color:#db2777; margin:0.35rem auto; letter-spacing:0.08em;}
