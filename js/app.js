@@ -65,17 +65,20 @@ const galleryImages = {
     'assets/images/both_of_us/photo_13.jpg'
   ],
   onlyAnindita: [
+    'assets/images/Only_Anindita/img_ani_5.2.jpeg',
     'assets/images/Only_Anindita/img_ani_1.1.jpeg',
-    'assets/images/Only_Anindita/img_ani_1.2.jpeg',
+    'assets/images/Only_Anindita/img_ani_4.jpeg',
+    'assets/images/Only_Anindita/img_ani_5.4.jpeg',
     'assets/images/Only_Anindita/img_ani_2.jpeg',
+    'assets/images/Only_Anindita/img_ani_5.1.jpeg',
+    'assets/images/Only_Anindita/img_ani_8.jpeg',
     'assets/images/Only_Anindita/img_ani_3.jpg',
+    'assets/images/Only_Anindita/img_ani_5.3.jpeg',
+    'assets/images/Only_Anindita/img_ani_1.2.jpeg',
     'assets/images/Only_Anindita/img_ani_4.jpeg',
     'assets/images/Only_Anindita/img_ani_5.1.jpeg',
-    'assets/images/Only_Anindita/img_ani_5.2.jpeg',
-    'assets/images/Only_Anindita/img_ani_5.3.jpeg',
-    'assets/images/Only_Anindita/img_ani_5.4.jpeg',
-    'assets/images/Only_Anindita/img_ani_5.5.jpeg'
-  ]
+    'assets/images/Only_Anindita/img_ani_3.jpg'
+]
 };
 
 function shuffleGalleryImages(){
