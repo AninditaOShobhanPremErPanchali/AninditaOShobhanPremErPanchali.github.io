@@ -51,18 +51,19 @@ function createBubbles(){
 const galleryImages = {
   bothOfUs: [
     'assets/images/both_of_us/photo_1.jpg',
+    'assets/images/both_of_us/photo_2.2.jpeg',
     'assets/images/both_of_us/photo_2.jpg',
-    'assets/images/both_of_us/photo_3.jpg',
     'assets/images/both_of_us/photo_4.jpg',
     'assets/images/both_of_us/photo_5.jpg',
-    'assets/images/both_of_us/photo_6.jpg',
     'assets/images/both_of_us/photo_7.jpg',
     'assets/images/both_of_us/photo_8.jpg',
     'assets/images/both_of_us/photo_9.jpg',
     'assets/images/both_of_us/photo_10.jpg',
     'assets/images/both_of_us/photo_11.jpg',
     'assets/images/both_of_us/photo_12.jpg',
-    'assets/images/both_of_us/photo_13.jpg'
+    'assets/images/both_of_us/photo_13.jpg',
+    'assets/images/both_of_us/photo_3.jpg',
+    'assets/images/both_of_us/photo_6.jpg'
   ],
   onlyAnindita: [
     'assets/images/Only_Anindita/img_ani_5.2.jpeg',
