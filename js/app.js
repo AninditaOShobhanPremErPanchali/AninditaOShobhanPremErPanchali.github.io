@@ -75,6 +75,7 @@ const galleryImages = {
     'assets/images/Only_Anindita/img_ani_3.jpg',
     'assets/images/Only_Anindita/img_ani_6.jpeg',
     'assets/images/Only_Anindita/img_ani_5.3.jpeg',
+    'assets/images/Only_Anindita/img_ani_10.jpeg',
     'assets/images/Only_Anindita/img_ani_1.2.jpeg',
     'assets/images/Only_Anindita/img_ani_4.jpeg',
     'assets/images/Only_Anindita/img_ani_7.jpeg',
